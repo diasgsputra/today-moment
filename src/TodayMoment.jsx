@@ -134,7 +134,7 @@ const Navigation = () => (
           <div className="space-y-16">
             {/* Hero Section */}
             <div className="relative h-96 bg-gray-900 rounded-xl overflow-hidden">
-              <img src="/api/placeholder/1200/500" alt="Today's Moment Cover" className="absolute w-full h-full object-cover opacity-50" />
+              <img src="/portofolio/Img-4.jpg" alt="Today's Moment" className="absolute w-full h-auto object-cover opacity-50" />
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6">
                 <h1 className="text-5xl font-bold text-white mb-4">Today's Moment</h1>
                 <p className="text-xl text-white mb-8">Abadikan momen wisuda terbaikmu bersama kami</p>
