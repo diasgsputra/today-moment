@@ -60,12 +60,12 @@ const Navigation = () => (
           >
             Beranda
           </button>
-          <button 
+          {/* <button 
             onClick={() => setActiveNav('about')} 
             className={`font-medium ${activeNav === 'about' ? 'text-blue-500' : 'text-gray-600'}`}
           >
             Tentang
-          </button>
+          </button> */}
           <button 
             onClick={() => setActiveNav('portfolio')} 
             className={`font-medium ${activeNav === 'portfolio' ? 'text-blue-500' : 'text-gray-600'}`}
@@ -230,49 +230,49 @@ const Navigation = () => (
           </div>
         );
       
-        case 'about':
-            const team = [
-              { name: "Yusuf", role: "Photographer" },
-              { name: "Fathur", role: "Editor" },
-              { name: "Silky", role: "Photographer" },
-              { name: "Mumtaz", role: "Marketing" }
-            ];
+        // case 'about':
+        //     const team = [
+        //       { name: "Yusuf", role: "Photographer" },
+        //       { name: "Fathur", role: "Editor" },
+        //       { name: "Silky", role: "Photographer" },
+        //       { name: "Mumtaz", role: "Marketing" }
+        //     ];
           
-            return (
-              <div className="space-y-10">
-                <div className="bg-blue-50 rounded-xl p-8">
-                  <h1 className="text-3xl font-bold mb-6">Tentang Today's Moment</h1>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div>
-                      <p className="text-gray-600 mb-4">
-                        Today's Moment didirikan pada tahun 2022 oleh sekelompok fotografer muda yang memiliki passion dalam dunia fotografi. Berawal dari hobi memotret acara wisuda teman-teman, kami kemudian berkembang menjadi jasa profesional yang kini telah melayani berbagai universitas di Yogyakarta.
-                      </p>
-                      <p className="text-gray-600 mb-4">
-                        Kami menyadari bahwa momen wisuda adalah salah satu pencapaian terbesar dalam hidup seseorang. Itulah mengapa kami berkomitmen untuk mengabadikannya dengan kualitas terbaik dan pendekatan yang personal.
-                      </p>
-                    </div>
-                    <div className="rounded-xl overflow-hidden shadow-lg">
-                      <img src="/tentang/team.jpg" alt="Tim Today's Moment" className="w-full h-auto" />
-                    </div>
-                  </div>
-                </div>
+        //     return (
+        //       <div className="space-y-10">
+        //         <div className="bg-blue-50 rounded-xl p-8">
+        //           <h1 className="text-3xl font-bold mb-6">Tentang Today's Moment</h1>
+        //           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        //             <div>
+        //               <p className="text-gray-600 mb-4">
+        //                 Today's Moment didirikan pada tahun 2022 oleh sekelompok fotografer muda yang memiliki passion dalam dunia fotografi. Berawal dari hobi memotret acara wisuda teman-teman, kami kemudian berkembang menjadi jasa profesional yang kini telah melayani berbagai universitas di Yogyakarta.
+        //               </p>
+        //               <p className="text-gray-600 mb-4">
+        //                 Kami menyadari bahwa momen wisuda adalah salah satu pencapaian terbesar dalam hidup seseorang. Itulah mengapa kami berkomitmen untuk mengabadikannya dengan kualitas terbaik dan pendekatan yang personal.
+        //               </p>
+        //             </div>
+        //             <div className="rounded-xl overflow-hidden shadow-lg">
+        //               <img src="/tentang/team.jpg" alt="Tim Today's Moment" className="w-full h-auto" />
+        //             </div>
+        //           </div>
+        //         </div>
           
-                <div>
-                  <h2 className="text-2xl font-bold mb-4">Tim Kami</h2>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    {team.map(({ name, role }) => (
-                      <div key={name} className="bg-white rounded-xl overflow-hidden shadow-md">
-                        <img src={`/tentang/${name}.jpg`} alt={name} className="w-full h-48 object-cover" />
-                        <div className="p-4">
-                          <h3 className="font-semibold text-lg">{name}</h3>
-                          <p className="text-gray-500 text-sm">{role}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            );
+        //         <div>
+        //           <h2 className="text-2xl font-bold mb-4">Tim Kami</h2>
+        //           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        //             {team.map(({ name, role }) => (
+        //               <div key={name} className="bg-white rounded-xl overflow-hidden shadow-md">
+        //                 <img src={`/tentang/${name}.jpg`} alt={name} className="w-full h-48 object-cover" />
+        //                 <div className="p-4">
+        //                   <h3 className="font-semibold text-lg">{name}</h3>
+        //                   <p className="text-gray-500 text-sm">{role}</p>
+        //                 </div>
+        //               </div>
+        //             ))}
+        //           </div>
+        //         </div>
+        //       </div>
+        //     );
           
       
       case 'portfolio':
